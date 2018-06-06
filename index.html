@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Kirill Krasin</title>
   </head>
-  <body>
+  <body itemscope="itemscope" itemtype="http://schema.org/Person">
+<!-- Schema.org additional meta tags -->
+<meta itemprop="birthDate" content="1990-03-20">
+<meta itemprop="url" content="https://krasin.in.ua">
+<meta itemprop="email" content="mailto:kirillkrasin@gmail.com">
+<!-- Schema.org additional meta tags -->
     <div class="profile-wrapper container">
 	<div class="row">
 		<div class="col-md-6 left">
-			<img class="user-photo" src="https://ru.gravatar.com/userimage/28503754/1168e2bddca84fec2a63addb348c571d.jpg?size=350" alt="Kirill Krasin">
+			<img class="user-photo" itemprop="image" src="https://ru.gravatar.com/userimage/28503754/1168e2bddca84fec2a63addb348c571d.jpg?size=350" alt="Kirill Krasin">
 		</div>
 		<div class="col-md-6 right text-center">
-			<h1>Kirill Krasin</h1><!-- Name -->
+			<h1 itemprop="name">Kirill Krasin</h1><!-- Name -->
 			<h2>Intern/Junior Front End Developer</h2><!-- Job -->
-			<span><a href="https://twitter.com/Mo_45" class="twitter-follow-button" data-show-count="false">Follow @Mo_45</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
+			<h3>Available for hire</h3>
 			<hr>
 			<div class="links">
 			<a href="https://t.me/Mo_45"><i class="fab fa-fw fa-telegram-plane fa-2x"></i></a>
@@ -27,12 +32,15 @@
 			<a href="https://vk.com/kirillkrasin"><i class="fab fa-fw fa-vk fa-2x"></i></a>
 			</div>
 			<hr>
+			<div class="phone">
+			<h3>Contact me:</h3>
+			<h2><a id="contact-phone" href="#" data-secret="KzM4MDY2ODM1NzY0Nw==">[Javascript required]</a></h2>
+			</div>
 		</div>
 	</div>
     </div>
-    <!-- script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script>$(window).load(function(){var contact = document.getElementById("contact-phone");contact.textContent = atob(contact.dataset.secret);contact.href = atob("dGVsOg==") + atob(contact.dataset.secret);});</script>
     <style>@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');</style>
   </body>
 </html>
